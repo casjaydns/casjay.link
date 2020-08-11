@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>404 Not Found</title>
+  <meta name="description" content="404 Not Found">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://static.casjay.net/default-css/errorpages/default.css">
+  <link rel="stylesheet" href="https://static.casjay.net/default-css/casjaysdev.css">
+  <script src="https://static.casjay.net/default-js/errorpages/isup.js"></script>
+  <script src="https://static.casjay.net/default-js/errorpages/homepage.js"></script>
+  <script src="https://static.casjay.net/default-js/errorpages/loaddomain.js"></script>
+  <!-- End Bootstrap core CSS -->
+</head>
+
+<body onload="javascript:loadDomain();">
+  <div class="container">
+    <div class="jumbotron">
+      <h1><i class="fa fa-frown-o red"></i> <a href="https://www.google.com/search?q=server+error+404" target="_blank">
+          404 Not Found</h1></a><br>
+      <p class="lead">We apologize but we can't seem to be able to find what you're looking for!<br></p>
+
+      <div class="container">
+        <div class="body-content">
+          <img alt='error' src='https://static.casjay.net/default-icons/errors/404.gif'><br>
+        </div>
+      </div>
+    </div>
+    <a onclick=javascript:homepage(); class="btn btn-default btn-lg green"><span id="display-domain"></span></a>
+  </div>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- End jQuery library -->
+</body>
+
+</html>

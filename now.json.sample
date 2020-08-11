@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    { "src": "/.*", "dest": "/index.js" },
+    {
+      "src": "/(.+js|.+css|.+png|.+ico|.+html|.+ico|robots.txt)",
+      "dest": "/$1"
+    }
+  ],
+
+  "env": {
+    "PORT": "2550",
+    "NODE_ENV": "production",
+    "MONGODB_URI": ""
+  }
+}
