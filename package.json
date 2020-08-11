@@ -1,13 +1,11 @@
 {
-  "name": "server",
+  "name": "url-shortner",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple url shortner",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "NODE_ENV=development PORT=8080 nodemon index.js",
-    "deploy": "vercel --prod",
-    "now-build": "npm i"
+    "dev": "NODE_ENV=development PORT=8080 nodemon index.js"
   },
   "keywords": [],
   "author": "CasjaysDev <git-admin@casjaysdev.com> (https://github.com/casjay)",

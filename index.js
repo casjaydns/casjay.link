@@ -10,9 +10,13 @@ const {
   nanoid
 } = require("nanoid");
 
-require("dotenv").config();
+require("dotenv").config({
+  path: './.env'
+});
 
+const urlHost = process.env.URLHOST || localhost;
 const node_Mode = process.env.NODE_ENV || development;
+const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/url";
 
 const db = monk(process.env.MONGODB_URI);
 const urls = db.get("urls");
@@ -78,7 +82,7 @@ app.post(
         slug,
         url,
       });
-      if (url.includes("casjay.now.sh")) {
+      if (url.includes(urlHost)) {
         throw new Error("Stop it. 🛑");
       }
       if (!slug) {

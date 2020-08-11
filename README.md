@@ -1,4 +1,5 @@
 # Welcome to URL Shortner 👋
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/now-sh/url)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-yellow.svg)](#)
@@ -10,15 +11,23 @@
 
 ### ✨ [Demo](https://url.casjay.now.sh)
 
-## Install
+## Install  
+
+Copy the env.sample file to .env and edit  
+  
+
+## Usage for Development  
+
+```sh
+npm i -D
+npm run dev
+```
+
+## Usage for production  
 
 ```sh
 npm install
-```
 
-## Usage
-
-```sh
 npm run start
 ```
 
@@ -26,11 +35,10 @@ npm run start
 
 👤 **CasjaysDev**
 
-* Website: http://jason.malaks.us
+* Website: <http://jason.malaks.us>
 * Twitter: [@casjaysdev](https://twitter.com/casjaysdev)
 * Github: [@casjay](https://github.com/casjay)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
