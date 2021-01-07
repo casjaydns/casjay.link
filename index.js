@@ -6,6 +6,7 @@ const yup = require("yup");
 const monk = require("monk");
 const rateLimit = require("express-rate-limit");
 const slowDown = require("express-slow-down");
+const cors = require('cors')
 const {
   nanoid
 } = require("nanoid");
@@ -29,8 +30,10 @@ urls.createIndex({
 const app = express();
 app.enable("trust proxy");
 
+app.use(cors())
 app.use(helmet());
 app.use(morgan("common"));
+
 app.use(express.json());
 app.use(express.static("./public"));
 
