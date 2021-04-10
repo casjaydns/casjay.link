@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "NODE_ENV=development PORT=8080 nodemon index.js"
+    "dev": "NODE_ENV=development PORT=2550 nodemon index.js"
   },
   "keywords": [],
   "author": "CasjaysDev <git-admin@casjaysdev.com> (https://github.com/casjay)",

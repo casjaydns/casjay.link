@@ -6,31 +6,33 @@ const yup = require("yup");
 const monk = require("monk");
 const rateLimit = require("express-rate-limit");
 const slowDown = require("express-slow-down");
-const cors = require('cors')
-const {
-  nanoid
-} = require("nanoid");
+const cors = require("cors");
+const { nanoid } = require("nanoid");
 
 require("dotenv").config({
-  path: './.env'
+  path: "./.env",
 });
 
+const port = process.env.PORT || 1337;
 const urlHost = process.env.URLHOST || localhost;
 const node_Mode = process.env.NODE_ENV || development;
 const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/url";
 
-const db = monk(process.env.MONGODB_URI);
+const db = monk(mongoURI);
 const urls = db.get("urls");
-urls.createIndex({
-  slug: 1,
-}, {
-  unique: true,
-});
+urls.createIndex(
+  {
+    slug: 1,
+  },
+  {
+    unique: true,
+  }
+);
 
 const app = express();
 app.enable("trust proxy");
 
-app.use(cors())
+app.use(cors());
 app.use(helmet());
 app.use(morgan("common"));
 
@@ -40,9 +42,7 @@ app.use(express.static("./public"));
 const notFoundPath = path.join(__dirname, "public/404.html");
 
 app.get("/:id", async (req, res, next) => {
-  const {
-    id: slug
-  } = req.params;
+  const { id: slug } = req.params;
   try {
     const url = await urls.findOne({
       slug,
@@ -76,10 +76,7 @@ app.post(
     max: 1,
   }),
   async (req, res, next) => {
-    let {
-      slug,
-      url
-    } = req.body;
+    let { slug, url } = req.body;
     try {
       await schema.validate({
         slug,
@@ -127,7 +124,6 @@ app.use((error, req, res, next) => {
   });
 });
 
-const port = process.env.PORT || 1337;
 app.listen(port, () => {
   console.log(`Listening on ${port} in ${node_Mode} mode`);
 });
