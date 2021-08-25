@@ -116,15 +116,17 @@ mobile-container {
 }
 
 .topnav_logo {
-  justify-content: center;
+  justify-content: left;
   overflow: hidden;
   position: left;
+  display: inline;
 }
 
 .topnav_links {
-  justify-content: center;
+  justify-content: right;
   overflow: hidden;
   position: right;
+  display: inline;
 }
 
 .topnav a {
