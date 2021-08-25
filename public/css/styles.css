@@ -103,7 +103,7 @@ header {
 }
 
 /* navBar */
-mobile-container {
+navBar {
   justify-content: space-between;
   width: 80vw;
   height: 36px;
@@ -114,20 +114,20 @@ mobile-container {
   margin-bottom: 3rem;
 }
 
-.topnav {
+.topNav {
   overflow: hidden;
   background-color: #333;
   position: relative;
 }
 
-.topnav #navLinks {
+.navLinks {
   display: inline;
   justify-content: right;
   align-items: end;
   margin-right: auto
 }
 
-.topnav a {
+.topNav a {
   float: left;
   color: white;
   padding: 14px 16px;
@@ -135,16 +135,16 @@ mobile-container {
   font-size: 17px;
 }
 
-.topnav a.icon {
+.topNav a.icon {
   float: right;
 }
 
-.topnav a:hover {
+.topNav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.active {
+topNavActive {
   background-color: #04AA6D;
   color: white;
 }
