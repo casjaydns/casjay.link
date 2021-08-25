@@ -102,10 +102,10 @@ header {
 }
 
 .mobile-container {
-  max-width: 480px;
+  max-width: 100vw;
   margin: auto;
   background-color: #555;
-  height: 500px;
+  height: auto;
   color: white;
   border-radius: 10px;
 }
