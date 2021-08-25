@@ -6,6 +6,7 @@
 
 html,
 body {
+  width: 80%;
   height: 100%;
 }
 
@@ -102,13 +103,15 @@ header {
 }
 
 /* navBar */
-.mobile-container {
-  max-width: 80%;
+mobile-container {
+  margin-bottom: 3rem;
   margin: auto;
   background-color: #555;
+  width: 80%;
   height: 32px;
   color: white;
-  border-radius: 10px;
+  border-radius: 2px;
+  margin-bottom: 3rem;
 }
 
 .topnav {
