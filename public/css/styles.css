@@ -6,8 +6,8 @@
 
 html,
 body {
-  width: 80%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -104,11 +104,11 @@ header {
 
 /* navBar */
 mobile-container {
+  width: auto;
+  height: 32px;
   margin-bottom: 3rem;
   margin: auto;
   background-color: #555;
-  width: 80%;
-  height: 32px;
   color: white;
   border-radius: 2px;
   margin-bottom: 3rem;
