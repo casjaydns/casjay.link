@@ -17,7 +17,6 @@
   <body>
     <div class="container">
       <!-- Nav -->
-      <header>
         <!-- Simulate a smartphone / tablet look -->
         <div class="mobile-container">
           <!-- Top Navigation Menu -->
@@ -32,11 +31,12 @@
           </div>
           <!-- End smartphone / tablet look -->
         </div>
-        <div>
-          <!-- end nav -->
+      <!-- end nav -->
+      <div>
+        <header>
           <h2>URL Shortner</h2>
-        </div>
-      </header>
+        </header>
+      </div>
 
       <main id="app">
         <form class="form" v-if="formVisible" @submit.prevent="createUrl()">
