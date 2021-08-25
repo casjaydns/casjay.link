@@ -120,6 +120,7 @@ mobile-container {
 }
 
 .topnav #myLinks {
+  align-items: right;
   display: inline;
 }
 
