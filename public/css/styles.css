@@ -116,17 +116,16 @@ mobile-container {
 
 .topnav_logo {
   display: inline;
-  align-items: flex-start;
+  justify-content: center;
   overflow: hidden;
-  background-color: #333;
   position: relative;
 }
 
 .topnav_links {
   display: inline;
-  justify-content: right;
-  align-items: flex-end;
-  margin-right: auto;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .topnav a {
