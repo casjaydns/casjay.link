@@ -1,6 +1,6 @@
 <script>
-function navBar() {
-  var x = document.getElementById("navBarLinks");
+function myFunction() {
+  var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
