@@ -125,6 +125,7 @@ mobile-container {
   display: inline;
   justify-content: right;
   align-items: end;
+  margin-right: auto
 }
 
 .topnav a {
