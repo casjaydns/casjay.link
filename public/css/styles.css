@@ -106,12 +106,11 @@ header {
 mobile-container {
   width: auto;
   height: 32px;
-  margin-bottom: 3rem;
   margin: auto;
   background-color: #555;
   color: white;
   border-radius: 2px;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 
 .topnav {
