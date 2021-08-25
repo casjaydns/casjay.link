@@ -114,20 +114,20 @@ navBar {
   margin-bottom: 3rem;
 }
 
-.topNav {
+navBar topNav {
   overflow: hidden;
   background-color: #333;
   position: relative;
 }
 
-.navLinks {
+navBar navLinks {
   display: inline;
   justify-content: right;
   align-items: end;
   margin-right: auto
 }
 
-.topNav a {
+navBar .topNav a {
   float: left;
   color: white;
   padding: 14px 16px;
@@ -135,16 +135,16 @@ navBar {
   font-size: 17px;
 }
 
-.topNav a.icon {
+navBar .topNav a.icon {
   float: right;
 }
 
-.topNav a:hover {
+navBar .topNav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topNavActive {
+navBar .topNavActive {
   background-color: #04AA6D;
   color: white;
 }
