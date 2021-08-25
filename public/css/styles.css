@@ -120,7 +120,7 @@ mobile-container {
 }
 
 .topnav #myLinks {
-  display: none;
+  display: inline;
 }
 
 .topnav a {
