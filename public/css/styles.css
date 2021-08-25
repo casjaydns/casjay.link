@@ -105,7 +105,7 @@ header {
 /* navBar */
 mobile-container {
   justify-content: space-between;
-  width: 80vw;
+  width: 30vw;
   height: 36px;
   background-color: #262626;
   color: white;
