@@ -8,10 +8,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://unpkg.com/vue@2.6.11/dist/vue.js" defer></script>
+  <script src="./js/navBar.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
 
 <body>
+  <!-- Simulate a smartphone / tablet look -->
+  <div class="mobile-container">
+  <!-- Top Navigation Menu -->
+    <div class="topnav">
+    <a href="/" class="active">Logo</a>
+      <div id="navBarLinks">
+        <a href="/about">About</a>
+      </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<!-- End smartphone / tablet look -->
+</div>
   <header>
     <img class="logo"
       src="https://avatars3.githubusercontent.com/u/126880?s=460&u=f4d4cc1188d3bfd7efae48d6818b66073b9a1634&v=4">
@@ -37,7 +52,7 @@
       <br>
       <!-- Begin Social Links -->
       <div class="share-buttons" align="center">
-        <a href="https://github.com/casjay-coffee/casjay.link" target="_blank" title="Github"><img alt="Tweet"
+        <a href="https://github.com/casjay" target="_blank" title="Github"><img alt="Github"
             src="https://static.casjay.net/default-icons/social/github-48x48.png" /></a>
         <br />
       </div>
