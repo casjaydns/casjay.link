@@ -104,28 +104,27 @@ header {
 
 /* navBar */
 mobile-container {
-  justify-content: center;
   width: 30vw;
   height: 36px;
-  background-color: #262626;
-  color: white;
   border-radius: 2px;
   margin-top: 1rem;
   margin-bottom: 3rem;
+  justify-content: center;
+  background-color: #262626;
+  color: white;
+  display: inline;
 }
 
 .topnav_logo {
-  display: inline;
   justify-content: center;
   overflow: hidden;
-  position: relative;
+  position: left;
 }
 
 .topnav_links {
-  display: inline;
   justify-content: center;
   overflow: hidden;
-  position: relative;
+  position: right;
 }
 
 .topnav a {
