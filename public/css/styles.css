@@ -104,7 +104,6 @@ header {
 
 /* navBar */
 mobile-container {
-  display: flex;
   justify-content: space-between;
   width: 80vw;
   height: 36px;
