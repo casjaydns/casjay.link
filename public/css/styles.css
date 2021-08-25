@@ -104,13 +104,14 @@ header {
 
 /* navBar */
 mobile-container {
-  width: auto;
-  height: 32px;
-  margin: auto;
+  width: 80vw;
+  height: 36px;
+  margin: none;
   background-color: #555;
   color: white;
   border-radius: 2px;
-  margin-bottom: 10rem;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .topnav {
