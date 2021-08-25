@@ -121,7 +121,7 @@ mobile-container {
 }
 
 .topnav #myLinks {
-  align-items: right;
+  align-items: end;
   display: inline;
 }
 
