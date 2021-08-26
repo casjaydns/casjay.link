@@ -139,6 +139,7 @@ navBarMenu {
   background-color: #262626;
   color: white;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .topnav_logo {
