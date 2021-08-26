@@ -111,8 +111,8 @@ header {
 }
 /* navBar */
 navBarMenu {
-  height: 36px;
-  border-radius: 2px;
+  height: 48px;
+  border-radius: 1px;
   margin-top: 1rem;
   margin-bottom: 3rem;
   background-color: #262626;
