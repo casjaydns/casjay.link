@@ -116,14 +116,16 @@ mobile-container {
 }
 
 .topnav_logo {
-  justify-content: left;
+  justify-content: space-between;
+  align-items: flex-start;
   overflow: hidden;
   position: left;
   display: inline;
 }
 
 .topnav_links {
-  justify-content: right;
+  justify-content: space-between;
+  align-items: flex-end;
   overflow: hidden;
   position: right;
   display: inline;
