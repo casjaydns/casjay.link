@@ -19,6 +19,7 @@ body {
   width: auto;
   height: auto;
   background-color: #262626;
+  overflow: hidden;
 }
 
 header {
@@ -144,7 +145,6 @@ navBarMenu {
   justify-content: left;
   align-items: flex-start;
   text-align: left;
-  overflow: hidden;
   position: left;
   display: inline;
 }
@@ -153,7 +153,6 @@ navBarMenu {
   justify-content: right;
   align-items: flex-end;
   text-align: right;
-  overflow: hidden;
   position: right;
   display: inline;
 }
