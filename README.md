@@ -14,6 +14,7 @@
 ## Install  
 
 Copy the env.sample file to .env and edit  
+edit public/js/app.js and change casjay.link to your host  
   
 
 ## Usage for Development  
