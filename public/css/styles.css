@@ -98,6 +98,17 @@ header {
   color: inherit;
 }
 
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
 /* navBar */
 navBarMenu {
   height: 36px;
