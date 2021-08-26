@@ -115,10 +115,11 @@ navBarMenu {
   margin-bottom: 3rem;
   background-color: #262626;
   color: white;
+  justify-content: space-between;
 }
 
 .topnav_logo {
-  justify-content: space-between;
+  justify-content: left;
   align-items: flex-start;
   text-align: left;
   overflow: hidden;
@@ -127,7 +128,7 @@ navBarMenu {
 }
 
 .topnav_links {
-  justify-content: space-between;
+  justify-content: right;
   align-items: flex-end;
   text-align: right;
   overflow: hidden;
