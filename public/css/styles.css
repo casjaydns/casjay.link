@@ -55,6 +55,11 @@ header {
   max-width: 100%;
 }
 
+.h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
 .input {
   font-family: inherit;
   padding-bottom: 1rem;
@@ -103,21 +108,20 @@ header {
 }
 
 /* navBar */
-mobile-container {
+navBarMenu {
   width: 30vw;
   height: 36px;
   border-radius: 2px;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  justify-content: space-between;
   background-color: #262626;
   color: white;
-  display: inline;
 }
 
 .topnav_logo {
   justify-content: space-between;
   align-items: flex-start;
+  text-align: left;
   overflow: hidden;
   position: left;
   display: inline;
@@ -126,6 +130,7 @@ mobile-container {
 .topnav_links {
   justify-content: space-between;
   align-items: flex-end;
+  text-align: right;
   overflow: hidden;
   position: right;
   display: inline;
