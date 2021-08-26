@@ -28,6 +28,12 @@ header {
   height: auto;
 }
 
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
 .logo {
   max-height: 90%;
   max-width: 90%;
@@ -53,11 +59,6 @@ header {
 .create {
   margin: 1rem 0;
   max-width: 100%;
-}
-
-.h1 {
-  color: #ffffff;
-  text-align: center;
 }
 
 .input {
