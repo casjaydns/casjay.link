@@ -56,6 +56,10 @@ h3 {
   margin-right: 0;
 }
 
+main {
+  overflow: hidden;
+}
+
 .logo {
   max-height: 90%;
   max-width: 90%;
