@@ -29,9 +29,30 @@ header {
 }
 
 h1 {
+  display: block;
   color: #ffffff;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2 {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.75rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h3 {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .logo {
