@@ -150,8 +150,8 @@ navBarMenu {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: red;
+  background-color: #5A4695;
+  color: grey;
 }
 
 .active {
