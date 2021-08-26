@@ -24,37 +24,6 @@ header {
   height: auto;
 }
 
-h1 {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  font-size: 2rem;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-h2 {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.75rem;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-h3 {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-main {
-  overflow: hidden;
-}
-
 .logo {
   max-height: 90%;
   max-width: 90%;
@@ -171,7 +140,7 @@ navBarMenu {
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: blue;
 }
 
 .active {
