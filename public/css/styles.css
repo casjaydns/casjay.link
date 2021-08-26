@@ -140,7 +140,7 @@ navBarMenu {
 
 .topnav a:hover {
   background-color: #ddd;
-  color: blue;
+  color: red;
 }
 
 .active {
