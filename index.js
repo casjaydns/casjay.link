@@ -13,9 +13,9 @@ require("dotenv").config({
   path: "./.env",
 });
 
-const port = process.env.PORT || 1337;
-const urlHost = process.env.URLHOST || localhost;
-const node_Mode = process.env.NODE_ENV || development;
+const port = process.env.PORT || '1337';
+const urlHost = process.env.URLHOST || 'localhost';
+const node_Mode = process.env.NODE_ENV || 'development';
 const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/url";
 
 const db = monk(mongoURI);
@@ -67,13 +67,13 @@ const schema = yup.object().shape({
 app.post(
   "/url",
   slowDown({
-    windowMs: 30 * 1000,
+    windowMs: 10 * 1000,
     delayAfter: 1,
     delayMs: 500,
   }),
   rateLimit({
-    windowMs: 30 * 1000,
-    max: 1,
+    windowMs: 10 * 100,
+    max: 3,
   }),
   async (req, res, next) => {
     let { slug, url } = req.body;
@@ -127,3 +127,4 @@ app.use((error, req, res, next) => {
 app.listen(port, () => {
   console.log(`Listening on ${port} in ${node_Mode} mode`);
 });
+

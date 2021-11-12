@@ -21,11 +21,13 @@ const app = new Vue({
         }),
       });
       if (response.ok) {
+        const protocol = window.location.protocol;
+        const domain = window.location.host;
         const result = await response.json();
         this.formVisible = false;
-        this.created = `https://casjay.link/${result.slug}`;
+        this.created = `${protocol}//${domain}/${result.slug}`;
       } else if (response.status === 429) {
-        this.error = 'You are sending too many requests. Try again in 30 seconds.';
+        this.error = 'You are sending too many requests. Try again in a few seconds.';
       } else {
         const result = await response.json();
         this.error = result.message;
