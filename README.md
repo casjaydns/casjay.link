@@ -36,7 +36,7 @@ npm run start
 
 👤 **CasjaysDev**
 
-* Website: <http://jason.malaks.us>
+* Website: <http://malaks-us.github.io/jason>
 * Twitter: [@casjaysdev](https://twitter.com/casjaysdev)
 * Github: [@casjay](https://github.com/casjay)
 
