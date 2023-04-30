@@ -2,7 +2,6 @@
 Description=casjay.link url shortner
 Documentation=https://casjay.link
 After=network.target
-#Requires=After=mysql.service       # Requires the mysql service to run first
 
 [Service]
 ExecStart=/usr/local/bin/npm run dev
@@ -18,4 +17,3 @@ SyslogIdentifier=casjay-link
 
 [Install]
 WantedBy=multi-user.target
-
