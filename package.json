@@ -8,7 +8,7 @@
     "dev": "NODE_ENV=development PORT=2550 nodemon index.js"
   },
   "keywords": [],
-  "author": "CasjaysDev <git-admin@casjaysdev.com> (https://github.com/casjay)",
+  "author": "CasjaysDev <git-admin@casjaysdev.pro> (https://github.com/casjay)",
   "license": "WTFPL",
   "dependencies": {
     "cors": "^2.8.5",
