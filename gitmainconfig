@@ -7,7 +7,7 @@
 	url = https://github.com/casjaydns/casjay.link
         pushurl = https://github.com/casjaydns/casjay.link
         url = https://github.com/now-sh/shrtner
-        pushurl = https://github.com/now-sh/shrtner
+        #pushurl = https://github.com/now-sh/shrtner
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "main"]
 	remote = origin
