@@ -1,25 +1,25 @@
-const path = require("path");
-const express = require("express");
-const morgan = require("morgan");
-const helmet = require("helmet");
-const yup = require("yup");
-const monk = require("monk");
-const rateLimit = require("express-rate-limit");
-const slowDown = require("express-slow-down");
-const cors = require("cors");
-const { nanoid } = require("nanoid");
+const path = require('path');
+const express = require('express');
+const morgan = require('morgan');
+const helmet = require('helmet');
+const yup = require('yup');
+const monk = require('monk');
+const rateLimit = require('express-rate-limit');
+const slowDown = require('express-slow-down');
+const cors = require('cors');
+const { nanoid } = require('nanoid');
 
-require("dotenv").config({
-  path: "./.env",
+require('dotenv').config({
+  path: './.env',
 });
 
 const port = process.env.PORT || '1337';
 const urlHost = process.env.URLHOST || 'localhost';
 const node_Mode = process.env.NODE_ENV || 'development';
-const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/url";
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/url';
 
 const db = monk(mongoURI);
-const urls = db.get("urls");
+const urls = db.get('urls');
 urls.createIndex(
   {
     slug: 1,
@@ -30,18 +30,18 @@ urls.createIndex(
 );
 
 const app = express();
-app.enable("trust proxy");
+app.enable('trust proxy');
 
 app.use(cors());
 app.use(helmet());
-app.use(morgan("common"));
+app.use(morgan('common'));
 
 app.use(express.json());
-app.use(express.static("./public"));
+app.use(express.static('./public'));
 
-const notFoundPath = path.join(__dirname, "public/404.html");
+const notFoundPath = path.join(__dirname, 'public/404.html');
 
-app.get("/:id", async (req, res, next) => {
+app.get('/:id', async (req, res, next) => {
   const { id: slug } = req.params;
   try {
     const url = await urls.findOne({
@@ -65,7 +65,7 @@ const schema = yup.object().shape({
 });
 
 app.post(
-  "/url",
+  '/url',
   slowDown({
     windowMs: 10 * 1000,
     delayAfter: 1,
@@ -83,7 +83,7 @@ app.post(
         url,
       });
       if (url.includes(urlHost)) {
-        throw new Error("Stop it. 🛑");
+        throw new Error('Stop it. 🛑');
       }
       if (!slug) {
         slug = nanoid(5);
@@ -92,7 +92,7 @@ app.post(
           slug,
         });
         if (existing) {
-          throw new Error("Slug in use. 🍔");
+          throw new Error('Slug in use. 🍔');
         }
       }
       slug = slug.toLowerCase();
@@ -120,11 +120,11 @@ app.use((error, req, res, next) => {
   }
   res.json({
     message: error.message,
-    stack: process.env.NODE_ENV === "production" ? "🥞" : error.stack,
+    stack: process.env.NODE_ENV === 'production' ? '🥞' : error.stack,
   });
 });
 
 app.listen(port, () => {
   console.log(`Listening on ${port} in ${node_Mode} mode`);
+  console.log(`Connected to ${MONGODB_URI}`);
 });
-
