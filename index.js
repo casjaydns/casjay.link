@@ -126,5 +126,5 @@ app.use((error, req, res, next) => {
 
 app.listen(port, () => {
   console.log(`Listening on ${port} in ${node_Mode} mode`);
-  console.log(`Connected to ${MONGODB_URI}`);
+  console.log(`Connected to ${mongoURI}`);
 });
