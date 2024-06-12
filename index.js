@@ -16,7 +16,7 @@ require('dotenv').config({
 const port = process.env.PORT || '1337';
 const urlHost = process.env.URLHOST || 'localhost';
 const node_Mode = process.env.NODE_ENV || 'development';
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/url';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/shrtnr';
 
 const db = monk(mongoURI);
 const urls = db.get('urls');
