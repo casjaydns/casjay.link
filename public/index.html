@@ -16,29 +16,29 @@
   <body>
     <!-- Nav -->
     <div>
-      <div class="vh-100">
-        <navBarMenu>
-          <!-- Top Navigation Menu -->
-          <div class="topnav">
-            <div class="topnav_logo">
-              <a href="/" class="active">Home </a>
-            </div>
-            <div class="topnav_links">
-              <a class="" href="/list">list </a>
-              <a class="" href="/domains">domains </a>
-              <a class="" href="/about">About </a>
-            </div>
+      <navBarMenu>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <div class="topnav_logo">
+            <a href="/" class="active">Home </a>
           </div>
-        </navBarMenu>
-        <!-- end nav -->
-
-        <div>
-          <header>
-            <img src="/favicon.ico" alt="logo" width="128" height="128" />
-            <br />
-          </header>
+          <div class="topnav_links">
+            <a class="" href="/list">list </a>
+            <a class="" href="/domains">domains </a>
+            <a class="" href="/about">About </a>
+          </div>
         </div>
+      </navBarMenu>
+      <!-- end nav -->
 
+      <div>
+        <header>
+          <img src="/favicon.ico" alt="logo" width="128" height="128" />
+          <br />
+        </header>
+      </div>
+
+      <div class="vh-100">
         <main id="app">
           <form class="form" v-if="formVisible" @submit.prevent="createUrl()">
             <div v-if="error" class="error">{{error}}</div>
