@@ -153,7 +153,7 @@ navBarMenu {
 }
 
 .topnav a:hover {
-  background-color: #5A4695;
+  background-color: #5a4695;
   color: grey;
 }
 
@@ -162,3 +162,10 @@ navBarMenu {
   color: white;
 }
 /* End navBar */
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed #b5e853;
+  color: #b5e853;
+}
